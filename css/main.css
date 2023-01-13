@@ -1,0 +1,591 @@
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  position: relative;
+  font-family: system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", sans-serif;
+  font-size: 10px;
+  background-color: #fff;
+  color: #27282c;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 3em;
+}
+
+h2 {
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+h3 {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.site-container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.main-button {
+  padding: 0.2em 3em;
+  background-color: #ec1d24;
+  text-align: center;
+  border-radius: 20px;
+  text-decoration: none;
+  color: #fff;
+  border: none;
+}
+.main-button a {
+  height: 100%;
+  width: 100%;
+  text-decoration: none;
+  color: #fff;
+}
+
+header .header-section {
+  position: relative;
+  display: flex;
+  margin: 10px auto 0;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+}
+header .header-section .gerda-logo {
+  flex-grow: 3;
+}
+header .header-section .gerda-logo img {
+  height: 10px;
+}
+header .header-section .gerda-team-logo {
+  flex-grow: 3;
+  text-align: right;
+}
+header .header-section .gerda-team-logo img {
+  height: 50px;
+}
+header .header-section .user-section {
+  flex-grow: 6;
+  position: relative;
+}
+header .header-section .user-section .logo-drzwi {
+  height: 20px;
+}
+header .header-section .user-section p:first-child {
+  margin-bottom: 0;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1em;
+}
+header .header-section .user-section .user-info {
+  display: flex;
+  flex-direction: column;
+  font-size: 1em;
+}
+header .header-section .user-section .user-info a {
+  text-decoration: none;
+  color: #27282c;
+}
+header .header-section .user-section .user-info .stars-icon {
+  color: #dc3545;
+}
+header .header-section .user-section .logout-button {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  margin-left: 5px;
+}
+header .header-section .user-section .logout-button i {
+  padding: 6px;
+  background-color: #dc3545;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 50% 50%;
+  transition: background-color 0.3s;
+}
+header .header-section .user-section .logout-button i:hover {
+  background-color: #0a253d;
+}
+
+nav {
+  margin: 0 auto;
+  text-transform: uppercase;
+}
+nav .navbar {
+  display: flex;
+  justify-content: center;
+}
+nav .navbar a {
+  color: #27282c;
+  text-decoration: none;
+  padding: 3px 6px;
+  border-radius: 10px 10px 0 0;
+  transition: background-color 0.3s, color 0.3s;
+}
+nav .navbar #home {
+  padding: 3px;
+}
+nav .navbar a:hover {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+.carousel-section {
+  margin: 0 10px;
+  padding: 0;
+}
+.carousel-section img {
+  border-radius: 30px 30px;
+}
+
+.proste-zasady {
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f4f4f4;
+  text-align: center;
+}
+.proste-zasady .rules-boxes {
+  position: relative;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+.proste-zasady .rules-boxes .rules-box {
+  position: relative;
+  flex-grow: 1;
+  width: 80%;
+  max-width: 180px;
+  margin: 20px 10px;
+  text-align: center;
+}
+.proste-zasady .rules-boxes .rules-box .rules-box-image {
+  padding: 20px 10px;
+  background-color: #fff;
+  border-radius: 20px 20px 0 0;
+}
+.proste-zasady .rules-boxes .rules-box .rules-box-image img {
+  width: 50%;
+}
+.proste-zasady .rules-boxes .rules-box .rules-box-text {
+  padding: 20px;
+  background-color: #0a253d;
+  color: #fff;
+  border-radius: 0 0 20px 20px;
+}
+.proste-zasady .rules-boxes .rules-box .rules-box-text p {
+  font-weight: bold;
+  font-size: 1.8em;
+}
+.proste-zasady .rules-boxes .rules-box .rules-number {
+  position: absolute;
+  top: -15px;
+  left: -15px;
+  padding: 15px 9px;
+  background-color: #f4f4f4;
+  border-radius: 50% 50%;
+}
+.proste-zasady .rules-boxes .rules-box .rules-number span {
+  padding: 8px 10px;
+  background-color: #dc3545;
+  text-align: center;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 50% 50%;
+}
+.proste-zasady .rules-text {
+  padding-top: 5px;
+  font-size: 1.2em;
+}
+.proste-zasady .rules-text span {
+  font-weight: bold;
+}
+
+.twoje-punkty {
+  margin: 20px auto;
+  padding-top: 15px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+.twoje-punkty .points-boxes {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 20px;
+  font-weight: bold;
+}
+.twoje-punkty .points-boxes .big-header {
+  flex: 4 0 40%;
+  font-size: 1.8em;
+}
+.twoje-punkty .points-boxes .small-header {
+  flex: 3 0 30%;
+  font-size: 1.4em;
+}
+
+.nagrody {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  padding: 15px 20px;
+  background-color: #f4f4f4;
+}
+.nagrody h1 {
+  margin: 20px auto 0;
+}
+.nagrody .reward-section {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  margin: 40px auto;
+}
+.nagrody .reward-section .card-box {
+  text-align: center;
+}
+.nagrody .reward-section .card-box img {
+  width: 100%;
+}
+.nagrody .reward-section .card-text {
+  width: 100%;
+  padding: 50px;
+  background-color: #0a253d;
+  color: #fff;
+  text-align: justify;
+  border-radius: 0 30px 30px;
+}
+.nagrody .reward-section .card-text h2 {
+  font-size: 2em;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.nagrody .reward-section .card-text p {
+  font-size: 1.6em;
+}
+.nagrody .reward-section .dotting-box {
+  display: none;
+}
+.nagrody .reward-section .main-button {
+  margin: 40px auto;
+}
+
+.kontakt {
+  padding: 20px 40px;
+}
+.kontakt .contact-container {
+  width: 100%;
+}
+.kontakt .contact-container h1 {
+  margin: 20px auto;
+  text-align: center;
+}
+.kontakt .contact-container .contact-box {
+  width: 100%;
+  font-size: 1.2em;
+}
+.kontakt .contact-container .contact-box .infolinia {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 5px 10px;
+  margin: 10px auto;
+  background-color: #0a253d;
+  color: #fff;
+  font-size: 0.9em;
+  text-align: center;
+  border-radius: 7px;
+}
+.kontakt .contact-container .contact-box span {
+  font-weight: bold;
+}
+.kontakt .contact-container .contact-image {
+  display: none;
+}
+.kontakt .contact-container .input-group {
+  margin-bottom: 10px;
+}
+
+footer {
+  padding: 20px;
+}
+footer .footer-group {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: baseline;
+  width: 100%;
+  max-width: 1200px;
+}
+footer .footer-group p {
+  font-size: 1.2em;
+  margin-left: 10px;
+}
+footer .footer-group img {
+  height: 12px;
+  margin: 5px 10px;
+}
+
+@media (min-width: 480px) {
+  header .header-section {
+    margin: 10px auto 0;
+    padding: 0 30px;
+  }
+  header .header-section .gerda-logo {
+    flex-grow: 5;
+  }
+  header .header-section .gerda-team-logo {
+    flex-grow: 5;
+    padding-left: 30px;
+    text-align: center;
+  }
+  header .header-section .user-section {
+    flex-grow: 6;
+  }
+  nav .navbar a {
+    padding: 3px 8px;
+    font-size: 1.3em;
+  }
+  .proste-zasady .rules-boxes {
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: stretch;
+  }
+  .nagrody .reward-section {
+    width: 70%;
+  }
+}
+@media (min-width: 768px) {
+  h1 {
+    font-size: 3em;
+  }
+  .site-container {
+    max-width: 992px;
+  }
+  header .header-section .gerda-logo {
+    flex-grow: 4;
+  }
+  header .header-section .gerda-logo img {
+    height: 25px;
+  }
+  header .header-section .gerda-team-logo {
+    flex-grow: 4;
+  }
+  header .header-section .gerda-team-logo img {
+    height: 70px;
+  }
+  header .header-section .user-section {
+    flex-grow: 4;
+  }
+  header .header-section .user-section .logo-drzwi {
+    height: 30px;
+  }
+  .carousel-section {
+    padding-bottom: 20px;
+  }
+  .twoje-punkty {
+    width: 80%;
+  }
+  .nagrody {
+    padding: 20px 40px 40px;
+  }
+  .nagrody .reward-section {
+    width: 100%;
+    max-width: 1200px;
+    flex-flow: row;
+  }
+  .nagrody .reward-section .card-box {
+    width: 50%;
+  }
+  .nagrody .reward-section .card-text {
+    width: 50%;
+  }
+  .nagrody .reward-section .card-box-tank {
+    order: 2;
+  }
+  .nagrody .reward-section .dotting-box {
+    display: block;
+    color: #27282c;
+    font-size: 7em;
+    padding: 20px;
+  }
+  .kontakt {
+    padding: 20px 60px;
+  }
+  .kontakt .contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    max-width: 1200px;
+  }
+  .kontakt .contact-container .contact-box {
+    flex-grow: 1;
+    flex-basis: 50%;
+    font-size: 2em;
+  }
+  .kontakt .contact-container .contact-box .infolinia {
+    padding: 7px 20px;
+  }
+  .kontakt .contact-container .contact-box .input-group {
+    padding-right: 10px;
+  }
+  .kontakt .contact-container .contact-image {
+    flex-grow: 1;
+    flex-basis: 50%;
+    display: block;
+    padding-left: 10px;
+  }
+  .kontakt .contact-container .contact-image img {
+    width: 100%;
+  }
+  footer {
+    margin-top: 20px;
+  }
+  footer .footer-group p {
+    font-size: 1.4em;
+    margin-left: 50px;
+    margin-right: 10px;
+  }
+  footer .footer-group img {
+    height: 25px;
+  }
+}
+@media (min-width: 992px) {
+  h1 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 5em;
+  }
+  h2,
+h3 {
+    padding-top: 20px;
+    font-size: 1.5em;
+  }
+  .site-container {
+    max-width: 1200px;
+  }
+  header .header-section {
+    margin: 10px auto;
+  }
+  header .header-section .user-section {
+    font-size: 1.5em;
+  }
+  header .header-section .user-section .logout-button i {
+    padding: 8px;
+    font-size: 1.2em;
+  }
+  nav .navbar a {
+    padding: 5px 25px;
+  }
+  .carousel-section {
+    padding-bottom: 30px;
+    border-radius: 50px;
+  }
+  .proste-zasady {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .proste-zasady .rules-boxes {
+    margin: 10px 30px;
+  }
+  .proste-zasady .rules-boxes .rules-box {
+    margin: 20px 15px;
+    max-width: 260px;
+  }
+  .twoje-punkty {
+    width: 75%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .twoje-punkty .points-boxes {
+    max-width: 1200px;
+    justify-content: center;
+  }
+  .twoje-punkty .points-boxes .big-header span {
+    font-size: 1.8em;
+  }
+  .twoje-punkty .points-boxes .small-header span {
+    font-size: 1.8em;
+  }
+  .kontakt .contact-container .contact-box .infolinia {
+    margin-bottom: 30px;
+  }
+  .kontakt .contact-container .contact-box .input-group {
+    min-height: 100px;
+  }
+}
+@media (min-width: 1200px) {
+  h2 {
+    font-size: 2em;
+  }
+  h3 {
+    font-size: 2em;
+  }
+  .site-container {
+    max-width: 1440px;
+  }
+  header .header-section {
+    max-width: 1200px;
+  }
+  header .header-section .gerda-logo img {
+    height: 30px;
+  }
+  header .header-section .gerda-team-logo img {
+    height: 110px;
+  }
+  header .header-section .user-section {
+    align-items: flex-end;
+  }
+  header .header-section .user-section .logo-drzwi {
+    height: 40px;
+  }
+  header .header-section .user-section .user-info {
+    font-size: 1em;
+  }
+  nav {
+    margin: 15px auto;
+  }
+  nav .navbar {
+    margin: 10px 100px;
+  }
+  nav .navbar a {
+    font-size: 1.7em;
+  }
+  .carousel-section {
+    max-width: 1500px;
+  }
+  .proste-zasady .rules-boxes {
+    max-width: 1200px;
+    margin: 20px auto;
+  }
+  .proste-zasady .rules-boxes .rules-box {
+    max-width: 300px;
+  }
+  .proste-zasady .rules-boxes .rules-box .rules-box-text p {
+    font-size: 2em;
+  }
+  .proste-zasady .rules-text {
+    font-size: 1.6em;
+  }
+  .twoje-punkty {
+    width: 1000px;
+  }
+  .twoje-punkty .points-boxes .big-header span {
+    font-size: 2em;
+  }
+  .twoje-punkty .points-boxes .small-header span {
+    font-size: 2em;
+  }
+  .kontakt .contact-container {
+    max-width: 1200px;
+  }
+  .kontakt .contact-container .contact-box .input-group {
+    min-height: 150px;
+  }
+}/*# sourceMappingURL=main.css.map */
